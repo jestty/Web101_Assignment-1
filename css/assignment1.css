@@ -1,0 +1,357 @@
+body {
+  margin: 0px;
+}
+/* tạo style cho toàn bộ trang */
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+
+.section-content {
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+/* tạo style cho phần tử h1, h2 */
+/* phần cố định ảnh ------------------------- */
+.section-title1 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 5px;
+  color: #0e2452;
+  border-bottom: solid 1px #000000;
+  margin-top: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.profile {
+  width: 113px;
+  height: auto;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+
+/* phần tên tuổi thông tin cá nhân---------------*/
+/* chuyển các phần tử khối vào cùng một dòng */
+#info .section-content h3,
+p {
+  margin: 0;
+}
+
+#info .section-content div {
+  display: inline-block;
+  width: 37%;
+}
+
+#info .section-content {
+  margin-bottom: 5px;
+}
+
+.section-birth,
+.section-sex,
+.section-tel,
+.section-mail,
+.section-address,
+.section-website {
+  padding-left: 0;
+  text-align: left;
+}
+
+/* phan hoc van education */
+/* tạo kiểu cho mốc thời gian */
+
+#education .realtime {
+  display: inline-block;
+  margin-right: 0;
+  padding-bottom: 0;
+  padding-top: 18px;
+  margin-bottom: 0px;
+  height: 83px;
+  width: auto;
+  vertical-align: top;
+}
+/* tạo kiểu cho phần nội dung nằm trong các list */
+
+#education .content {
+  padding-left: 200px;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin: 2px;
+  display: inline-block;
+  width: 65%;
+  height: 69px;
+}
+
+#education .content p {
+  margin: 0;
+}
+
+#education .content p:first-child {
+  margin-top: 0;
+}
+
+/* tạo kiểu cho phần tử chuỗi cha */
+#education .timeline ul {
+  margin: 0;
+  padding: 0;
+}
+/* tạo kiểu cho phần tử chuỗi con */
+
+#education .timeline ul li {
+  line-height: normal;
+  position: relative;
+  width: 98%;
+  height: auto;
+  list-style: none;
+  padding-left: 10px;
+  border-bottom: solid 0.5px rgb(0 0 0 / 20%);
+}
+
+/* tao phan duong ke truoc class timeline */
+/* xác định phần tử có vị trí tĩnh  */
+#education .timeline {
+  position: relative;
+  margin: 8px;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+/* tạo vị trí tuyệt đối cho phần tử giả của phần tử cha list để căn chỉnh*/
+#education .timeline::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: #211f1f;
+}
+/* truoc cac list tao bieu tuong moc thoi gian --------*/
+/* tạo vị trí tuyệt đối cho phần tử giả before của phần tử con của list */
+#education .timeline ul li::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: -2px;
+  width: 6px;
+  height: 6px;
+  background: #010619;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px black;
+}
+/* phan kinh nghiem lam viec ----------------------*/
+/* tạo kiểu cho các mốc thời gian */
+#experience .realtime {
+  display: inline-block;
+  margin-right: 0;
+  padding-bottom: 0;
+  padding-top: 18px;
+  margin-bottom: 0px;
+  height: 83px;
+  width: auto;
+  vertical-align: top;
+}
+/* tao kieu cho noi dung trong list */
+#experience .content {
+  padding-left: 200px;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin: 2px;
+  display: inline-block;
+  width: 65%;
+  height: 69px;
+}
+
+#experience .content p {
+  margin: 0;
+}
+
+#experience .content p:first-child {
+  margin-top: 0;
+}
+/* tao kieu cho list */
+#experience .timeline ul {
+  margin: 0;
+  padding: 0;
+}
+#experience .timeline ul li {
+  line-height: normal;
+  position: relative;
+  width: 98%;
+  height: auto;
+  list-style: none;
+  padding-left: 10px;
+  border-bottom: solid 0.5px rgb(0 0 0 / 20%);
+}
+/* tao phan duong ke truoc class timeline */
+/* xac dinh vi tri tuong doi cua phan tu */
+#experience .timeline {
+  position: relative;
+  margin: 8px;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+/* xac dinh vi tri tuyet doi cho phan tu gia */
+#experience .timeline::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: #211f1f;
+}
+/* truoc cac list tao bieu tuong moc thoi gian */
+#experience .timeline ul li::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: -2px;
+  width: 6px;
+  height: 6px;
+  background: #010619;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px black;
+}
+/* phan hoat dong---------------------------------- */
+/* su dung phan tu bang */
+#activity .section-content table {
+  width: 100%;
+}
+/* tao kieu cho hang */
+#activity .section-content tr {
+  display: block;
+  border-bottom: solid 0.5px rgb(0 0 0 / 20%);
+}
+/* tao kieu cho phan tieu de đàu hàng */
+#activity .section-content th {
+  text-align: left;
+  font-weight: normal;
+  padding-bottom: 25px;
+  width: 110px;
+}
+
+/* sử dung một list trong bảng */
+#activity .section-content ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 200px;
+}
+#activity .section-content li:first-child {
+  font-weight: bold;
+}
+
+/* phan ky nang -----------------------------------*/
+/* sử dụng phần tử bảng */
+#skill .section-content table {
+  width: 100%;
+}
+/* tạo kiểu cho hàng  */
+#skill .section-content tr {
+  display: block;
+  border-bottom: solid 0.5px rgb(0 0 0 / 20%);
+}
+
+#skill .section-content th {
+  text-align: left;
+  width: 110px;
+}
+#skill .section-content td {
+  padding-left: 200px;
+}
+
+/* phần chứng chỉ ---------------------------------*/
+
+#certificate .section-content table {
+  width: 100%;
+}
+
+#certificate .section-content tr {
+  display: block;
+  border-bottom: solid 0.5px rgb(0 0 0 / 20%);
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+#certificate .section-content th {
+  text-align: left;
+  width: 110px;
+}
+
+#certificate .section-content td {
+  padding-left: 200px;
+}
+
+/* phan so thich----------------------------------*/
+#hobby .section-content ul {
+  padding-left: 15px;
+}
+/* phan du an ------------------------------------*/
+.web1,
+.web2,
+.web3 {
+  padding-left: 15px;
+}
+/* phần liên hệ -----------------------------------*/
+#contact .section-content ol {
+  padding-left: 15px;
+}
+/* sử dụng lớp giả cho phần tử link a */
+/* trạng thái nhìn thấy */
+a:link {
+  color: greenyellow;
+  text-decoration: none;
+}
+/* trạng thái đã ghé thăm */
+a:visited {
+  color: rgb(86, 216, 86);
+}
+/* trạng thái di chuột qua */
+a:hover {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 5px;
+}
+/* trạng thái hoạt động */
+a:active {
+  color: red;
+  background-color: rgb(241, 232, 232);
+  font-style: italic;
+}
